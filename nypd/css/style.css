@@ -1,0 +1,198 @@
+/* ------------------------------------------- 
+------------  Stylesheet for NYPD  -----------
+------------  by Stephanie Huang  ------------
+
+>> Colors <<
+dark blue: #013C7E
+light blue: #B5DEFF
+-------------------------------------------- */
+
+html, body {
+	background: #013C7E;
+	font: 16px "Roboto",sans-serif;
+	min-height: 600px;
+	left: 0;
+	margin: 0;
+	top: 0;
+	min-width: 960px;
+}
+
+.body-image {
+	background-image: url('/images/team2.jpg');
+	background-attachment: fixed;
+	background-position: 100% 0%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: block;
+	height: 100%;
+	opacity: .2;
+	position: fixed;
+	width: 100%;
+}
+
+a, a:visited {
+	color: #013C7E;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #508ED4;
+}
+
+b {
+	color: #013C7E;
+	font-weight: bold;
+}
+
+/* ========================================================================= //
+
+	NAVIGATION
+
+// ========================================================================= */
+
+nav {
+	bottom: 2em;
+	left: 2em;
+	position: fixed;
+	width: 250px;
+}
+
+nav a, nav a:visited {
+	color: #fff;
+	font: 2.8em "Roboto Condensed",sans-serif;
+}
+
+nav a:hover {
+	color: #fff;
+	opacity: .5;
+}
+
+.icon {
+	background-image: url('/images/icons.png');
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 32px;
+	width: 32px;
+}
+
+.fb {
+	background-position: -40px 0;
+}
+
+.twitter {
+	background-position: 0 0;
+}
+
+.sub-nav {
+	left: 270px;
+	position: fixed;
+	top: 40%;
+}
+
+
+/* ========================================================================= //
+
+	MAIN PAGE
+
+// ========================================================================= */
+
+#title {
+	bottom: 1em;
+	right: .5em;
+	color: #fff;
+	position: absolute;
+}
+
+#title h1 {
+	color: #f3f315;
+	font: 7.5em "Cutive",serif;
+	font-weight: bold;
+	letter-spacing: .1em;
+	line-height: 1em;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+#title h2 {
+	font: 1.5em "Montserrat",sans-serif;
+	font-weight: 700;
+	margin: 0;
+	letter-spacing: .1em;
+	opacity: .8;
+	padding-left: .3em;
+	text-transform: uppercase;
+}
+
+/* ========================================================================= //
+
+	CONTENT
+
+// ========================================================================= */
+
+.wrapper {
+	background: #fff;
+	min-height: 100%;
+	left: 250px;
+	opacity: .8;
+	position: fixed;
+	width: 70%;
+	min-width: 500px;
+}
+
+.content {
+	line-height: 1.5em;
+	left: 430px;
+	position: absolute;
+	padding-top: 3em;
+	padding-bottom: 3em;
+	width: 40%;
+	min-width: 500px;
+}
+
+.content h1 {
+	font: 2.5em "Montserrat",sans-serif;
+	font-weight: 700;
+	margin: 1em 0 .5em -.5em;
+}
+
+.content h2 {
+	font: 1.2em "Cutive",serif;
+	margin: 1em 0 0 -.5em;
+}
+
+.content h3 {
+	font: 1.5em "Montserrat",sans-serif;
+	font-style: italic;
+	margin: 1em 0 0 -.5em;
+}
+
+.news p {
+	font-size: .95em;
+	margin-top: 0;
+	margin-left: -.5em;
+	padding-top: 0;
+}
+
+td {
+	padding: 0 1em;
+	width: 50%;
+}
+
+
+/* ========================================================================= //
+
+	POSTS
+
+// ========================================================================= */
+
+.date {
+	color: #888;
+	font-size: .8em;
+	margin-left: -7.5em;
+	margin-bottom: -3.5em;
+	padding: 0;
+}
+
+.post {
+	margin-left: -.5em;
+}
