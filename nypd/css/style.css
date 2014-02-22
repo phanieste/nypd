@@ -1,11 +1,11 @@
-/* ------------------------------------------- 
-------------  Stylesheet for NYPD  -----------
-------------  by Stephanie Huang  ------------
+---
+---
 
+/* 
 >> Colors <<
 dark blue: #013C7E
 light blue: #B5DEFF
--------------------------------------------- */
+ */
 
 html, body {
 	background: #013C7E;
@@ -18,7 +18,7 @@ html, body {
 }
 
 .body-image {
-	background-image: url('/images/team2.jpg');
+	background-image: url("{{ site.url }}/images/team2.jpg");
 	background-attachment: fixed;
 	background-position: 100% 0%;
 	background-repeat: no-repeat;
@@ -68,7 +68,7 @@ nav a:hover {
 }
 
 .icon {
-	background-image: url('/images/icons.png');
+	background-image: url('{{ site.url }}/images/icons.png');
 	background-repeat: no-repeat;
 	display: inline-block;
 	height: 32px;

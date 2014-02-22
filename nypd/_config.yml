@@ -1,3 +1,5 @@
 name: NYPD - Columbia Women's Ultimate Frisbee
 markdown: redcarpet
 pygments: true
+url: http://www.columbia.edu/cu/ultimate/nypd
+excerpt_separator: <!-- more -->
