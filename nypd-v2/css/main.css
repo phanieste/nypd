@@ -1,0 +1,171 @@
+---
+---
+body {
+  background: url("{{ site.baseurl }}/images/team1b.jpg") no-repeat fixed center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  font: 16px "Roboto",sans-serif;
+  width: 100%;
+}
+
+a, a:visited {
+  color: #013C7E;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #508ED4;
+}
+
+b {
+  color: #013C7E;
+  font-weight: bold;
+}
+
+/* ========================================================================= //
+
+  MAIN PAGE
+
+// ========================================================================= */
+
+.btn-learn-more {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.33;
+  margin-bottom: 0;
+  padding: 10px 16px;
+  text-align: center;
+  transition: opacity .5s;
+  -webkit-transition: opacity .5s;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.btn-learn-more:hover {
+  color: #fff;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  text-decoration: none;
+}
+
+.content-fixed {
+  color: #fff;
+  display: table;
+  padding-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .content-fixed {
+    bottom: 50px;
+    left: 0;
+    color: #fff;
+    display: table;
+    height: 100%;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.intro {
+  background: url("{{ site.baseurl }}/images/team2.jpg") no-repeat fixed center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  color: #fff;
+  display: table;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.intro h1 {
+  font: 128px "Montserrat",sans-serif;
+  font-weight: bold;
+  letter-spacing: 7px;
+  margin-top: -50px;
+}
+
+.intro h2 {
+  color: #eee;
+  font: 28px "Roboto Condensed",sans-serif;
+  font-weight: 300;
+  margin-top: -30px;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+
+/* ========================================================================= //
+
+  NAVIGATION
+
+// ========================================================================= */
+
+.navbar-header {
+  background-color: #3f6987;
+  opacity: .7;
+  filter: alpha(opacity=70);
+  width: 100%;
+}
+
+#main-nav {
+  background-color: #3f6987;
+  opacity: .7;
+  filter: alpha(opacity=70);
+  position: relative;
+  width: 100%;
+}
+
+#main-nav a {
+  background-color: transparent;
+  color: #fff;
+  padding: 2.5px 15px;
+}
+
+@media (min-width: 768px) {
+  .nav-fixed {
+    bottom: 10px;
+    position: fixed;
+  }
+
+  #main-nav {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    z-index: 997;
+  }
+
+  #nav-main a, a:visited {
+    color: #fff;
+    font: 32px "Roboto Condensed",sans-serif;
+    padding: 2.5px 15px;
+    transition: padding .2s;
+    -webkit-transition: padding .2s;
+  }
+
+  #nav-main a:hover {
+    background-color: transparent;
+    color: #fff;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    padding: 2.5px 20px;
+    text-decoration: none;
+  }
+}
