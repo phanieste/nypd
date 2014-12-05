@@ -30,6 +30,8 @@ b {
   font-weight: bold;
 }
 
+
+
 /* ========================================================================= //
 
   MAIN PAGE
@@ -50,6 +52,7 @@ b {
   margin-bottom: 0;
   padding: 10px 16px;
   text-align: center;
+  text-decoration: none;
   transition: opacity .5s;
   -webkit-transition: opacity .5s;
   white-space: nowrap;
@@ -164,7 +167,6 @@ b {
 
 .intro-text {
   display: table-cell;
-  height: 100%;
   position: absolute;
   text-align: center;
   vertical-align: middle;
@@ -189,15 +191,12 @@ b {
 /* ===== LANDING SECTION ===== */
 
 .content-fixed {
-  bottom: 0;
   color: #fff;
-  display: table;
   height: 100%;
   left: 16%;
-  padding-top: 20px;
-  position: fixed;
+  position: relative;
   text-align: center;
-  width: 100%;
+  width: 84%;
 }
 
 .content-fixed h1 {
@@ -219,17 +218,14 @@ b {
 }
 
 .wrapper {
-  display: table-cell;
-  vertical-align: middle;
+  margin-top: 25%;
+  position: relative;
 }
 
 @media (min-width: 768px) {
   .content-fixed {
-    bottom: 50px;
-    left: 0;
     color: #fff;
     text-align: center;
-    width: 100%;
   }
 }
 
@@ -245,6 +241,15 @@ b {
   opacity: .7;
   filter: alpha(opacity=70);
   width: 100%;
+  z-index: 900;
+}
+
+.navbar-header .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background-color: #cccccc;
+  border-radius: 1px;
 }
 
 #main-nav {
@@ -255,10 +260,21 @@ b {
   width: 100%;
 }
 
-#main-nav a {
+#main-nav a, a:visited {
   background-color: transparent;
   color: #fff;
   padding: 2.5px 15px;
+  transition: padding .2s;
+  -webkit-transition: padding .2s;
+}
+
+#main-nav a:hover {
+  background-color: transparent;
+  color: #fff;
+  opacity: .5;
+  filter: alpha(opacity=50);
+  padding: 2.5px 20px;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -274,19 +290,7 @@ b {
   }
 
   #nav-main a, a:visited {
-    color: #fff;
     font: 32px "Roboto Condensed",sans-serif;
-    padding: 2.5px 15px;
-    transition: padding .2s;
-    -webkit-transition: padding .2s;
-  }
-
-  #nav-main a:hover {
-    background-color: transparent;
-    color: #fff;
-    opacity: .5;
-    filter: alpha(opacity=50);
-    padding: 2.5px 20px;
-    text-decoration: none;
+    
   }
 }
