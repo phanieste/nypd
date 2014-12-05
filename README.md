@@ -10,6 +10,9 @@ The website was originally coded by me using HTML, CSS, and very basic jQuery. T
 
 ### Changelog
 
+2014-12-05
+  * Successfully implemented animation intro for homepage.
+
 2014-11-17
   * Begin revamp using Bootstrap--homepage nearly done.
 
