@@ -2,6 +2,7 @@
 ---
 body {
   background: url("{{ site.baseurl }}/images/team1b.jpg") no-repeat fixed center;
+  background-color: #3f6987;
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -16,21 +17,48 @@ body {
   }
 }
 
-a, a:visited {
-  color: #013C7E;
+a, a:visited, a:hover {
   text-decoration: none;
 }
 
-a:hover {
-  color: #508ED4;
+.content {
+  color: #000;
+  line-height: 1.6em;
+  padding: 10px 5%;
+  z-index: 999;
 }
 
-b {
-  color: #013C7E;
-  font-weight: bold;
+.content a, a:visited {
+  color: #3f6987;
 }
 
+.content a:hover {
+  opacity: .7;
+  filter: alpha(opacity=70);
+}
 
+.filler {
+  background-color: #c3cfda;
+  opacity: 1;
+  position: absolute;
+  min-height: 100%;
+  width: 95%;
+  z-index: -1;
+}
+
+@media (min-width: 768px) {
+  body, html {
+    height: 100%;
+  }
+
+  .content {
+    padding: 10px 17%;
+  }
+
+  .full {
+    height: 100%;
+  }
+}
 
 /* ========================================================================= //
 
@@ -291,6 +319,36 @@ b {
 
   #nav-main a, a:visited {
     font: 32px "Roboto Condensed",sans-serif;
-    
+  }
+
+  #social {
+    padding-left: 12px;
+  }
+
+  #social a, a:visited {
+    display: inline-block;
+    padding: 2.5px 3px 2.5px 4px;
+    transition: padding .2s;
+    -webkit-transition: padding .2s;
+  }
+
+  #social a:hover {
+    padding: 2.5px 1px 2.5px 6px;
+  }
+
+  .icon {
+    background-image: url('{{ site.url }}/images/icons.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 32px;
+    width: 32px;
+  }
+
+  .fb {
+    background-position: 0 0;
+  }
+
+  .twitter {
+    background-position: -32px 0;
   }
 }

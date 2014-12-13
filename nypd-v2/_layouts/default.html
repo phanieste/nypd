@@ -8,14 +8,21 @@
     {% include home.html %}
   {% else %}
   <body>
-    <div class="container-fluid">
+    <div class="container-fluid full">
   {% endif %}
-      <div class="row">
+      <div class="row full">
         <div class="col-sm-2">
           {% include nav.html %}
         </div>
-        <div class="col-sm-8">
-          {{ content }}
+        <div class="col-sm-8 full">
+          {% if page.title == 'Home' %}
+           {{ content }}
+          {% else %}
+           <div class="filler"></div>
+           <div class="content">
+           {{ content }}
+           </div>
+          {% endif %}
         </div>
       </div> <!-- /row -->
     </div> <!-- / container-fluid -->

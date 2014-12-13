@@ -10,6 +10,12 @@ The website was originally coded by me using HTML, CSS, and very basic jQuery. T
 
 ### Changelog
 
+2014-12-13 
+  * Started formatting main content pages.
+
+2014-12-06
+  * Added social media links.
+
 2014-12-05
   * Implemented animated intro for homepage.
   * Fixed text positioning and mobile navigation.
