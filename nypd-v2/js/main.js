@@ -8,3 +8,14 @@ $('a[href^="#"]').on('click', function(event) {
     }, 1000, 'easeInOutSine');
 });
 
+// subnav links
+var current = window.location.pathname;
+current = current.substring(17, current.length);
+console.log(current);
+$('subnav li').each(function(i, e) {
+    var url = $(e).children('a').attr('href');
+    if (current === url) {
+        $(e).addClass('active');
+    }
+});
+

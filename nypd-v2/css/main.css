@@ -29,7 +29,7 @@ a, a:visited, a:hover {
 }
 
 .content a, a:visited {
-  color: #3f6987;
+  color: #013C7E;
 }
 
 .content a:hover {
@@ -57,6 +57,10 @@ a, a:visited, a:hover {
 
   .full {
     height: 100%;
+  }
+
+  .min-full {
+    min-height: 100%;
   }
 }
 
@@ -143,8 +147,8 @@ a, a:visited, a:hover {
 }
 .intro li:nth-child(2) span {
   background-image: url('{{ site.baseurl }}/images/c/zoe1.jpg');
-  animation-delay: 6s;
-  -webkit-animation-delay: 6s;
+  animation-delay: 5s;
+  -webkit-animation-delay: 5s;
 }
 .intro li:nth-child(3) span {
   background-image: url('{{ site.baseurl }}/images/c/team3.jpg');
@@ -351,4 +355,53 @@ a, a:visited, a:hover {
   .twitter {
     background-position: -32px 0;
   }
+}
+
+/* ========================================================================= //
+
+  ROSTERS
+
+// ========================================================================= */
+
+ul.subnav {
+  font-size: 1em;
+  list-style: none;
+  padding: 0;
+}
+
+.subnav > li {
+  display: inline-block;
+  padding: 5px 1em;
+  text-align: center;
+}
+
+.subnav li:nth-child(1) {
+  padding-left: 0;
+}
+
+.subnav a {
+  color: #013C7E;
+  font-weight: normal;
+}
+
+.subnav a:hover {
+  color: #;
+}
+
+.subnav li.active a {
+  color: ;
+}
+
+table.roster {
+  width: 100%;
+}
+
+table.roster > td {
+  width: 50%;
+}
+
+table.roster p {
+  padding: 0;
+  margin: 0;
+  padding-left: 1em;
 }

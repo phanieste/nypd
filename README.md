@@ -10,6 +10,9 @@ The website was originally coded by me using HTML, CSS, and very basic jQuery. T
 
 ### Changelog
 
+2015-01-15
+  * Main parts of site completed.
+
 2014-12-13 
   * Started formatting main content pages.
 
