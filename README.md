@@ -1,3 +1,5 @@
+Given the team's renaming to Pandemic and subsequent website revamp, this repo and website are now obsolete. If interested in the latest version, please see [pandemic-web](https://github.com/phanieste/pandemic-web).
+
 NYPD
 ======
 NYPD stands for Neon Yellow Panda Dragons. We are Columbia University's Women's Ultimate Frisbee team. We are a club sport that plays at local, regional, and national level tournaments.
